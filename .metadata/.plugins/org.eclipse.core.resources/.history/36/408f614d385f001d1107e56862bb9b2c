@@ -1,0 +1,18 @@
+package com.mohs10.or;
+
+import org.openqa.selenium.By;
+
+public class HomePage {
+	
+		
+	
+	
+
+	//excel sheet path
+	
+	public static By username = By.xpath("C:\\Users\\DELL\\Documents\\My sheet.xlsx");
+	public static By pwd = By.xpath("C:\\Users\\DELL\\Documents\\Filewrite.xlsx");
+	
+	
+		
+}

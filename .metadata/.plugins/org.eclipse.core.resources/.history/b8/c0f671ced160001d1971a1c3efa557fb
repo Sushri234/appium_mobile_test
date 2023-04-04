@@ -1,0 +1,23 @@
+package com.ppt;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Cowin {
+	
+@Test	
+public void Register_page()
+	
+	{
+	WebDriverManager.chromedriver().setup();
+	ChromeDriver driver =new ChromeDriver();
+	
+	driver.get("https://selfregistration.cowin.gov.in/");
+	driver.findElement(By.xpath("//*[@id=\"mat-input-0\"]")).sendKeys("7855041842");
+	driver.findElement(By.xpath("//*[@id=\"main-content\"]/app-login/div/ion-grid/ion-row/ion-col/ion-grid/ion-row/ion-col[1]/ion-grid/div/div[2]/form/ion-row/ion-col[2]/div/ion-button")).click();
+
+}
+}

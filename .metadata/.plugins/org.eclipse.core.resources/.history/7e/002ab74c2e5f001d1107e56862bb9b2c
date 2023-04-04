@@ -1,0 +1,31 @@
+package com.mohs10.scripts;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import com.mohs10.base.StartBrowser;
+import com.mohs10.reuse.CommonFuns;
+
+	public class HomeTest extends StartBrowser{
+	
+		@Test
+		  public void LoginPageTestCase() throws Exception {
+		CommonFuns hm2 = new CommonFuns();
+		FileInputStream files= new FileInputStream("C:\\Users\\DELL\\Documents\\My sheet.xlsx");
+		XSSFWorkbook wb=new XSSFWorkbook(files);
+		Sheet s=wb.getSheet("sheet1");
+		Row r= s.getRow(5);
+		Cell c= r.getCell(2);
+		//System.out.println(c.getStringCellValue());
+		 String address= c.getStringCellValue();
+	        
+	        System.out.println("Address is :"+ address);
+
+		  }
+		}

@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1663566229315,287,launch mohs10/complete/search-27,200,OK,Thread Group 1-1,text,true,,908,355,1,1,https://www.google.com/complete/search?client=firefox&q=mohs10,287,0,164
+1663566229603,759,our team/the-team/-49,200,OK,Thread Group 1-1,text,true,,30689,486,1,1,https://mohs10.io/the-team/,681,0,137
+1663566230363,92,greeshma/canonical.html-58,200,OK,Thread Group 1-1,text,true,,298,303,1,1,http://detectportal.firefox.com/canonical.html,92,0,44

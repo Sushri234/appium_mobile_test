@@ -1,0 +1,7 @@
+<Suite name = "demosuit">
+<test  name ="sampletestcase">
+<class name ="SampleTestNG.Testcases.ReceivingEmail"></class>>
+<class name ="SampleTestNG.Testcases.SendMails"></class>
+
+</test>>
+</Suite>
